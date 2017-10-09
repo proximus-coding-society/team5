@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kirti.handwriting2.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_launcher_round">
+
+    </ImageView>
+    <Button
+        android:id="@+id/selectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Load Picture"
+        android:layout_below="@id/imgView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center">
+
+    </Button>
+    <Button
+        android:id="@+id/processImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="getResult"
+        android:layout_below="@id/selectImage"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:onClick="go to next page">
+
+    </Button>
+</RelativeLayout>
